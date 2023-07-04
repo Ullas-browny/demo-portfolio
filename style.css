@@ -1,0 +1,922 @@
+/* -----------------------------------------------common font----------------------------------------------------- */
+span{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.maincontainer{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.801)
+}
+
+
+.introcontainer{
+  position:relative;
+  font-size: 1.5rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width:70vw;
+  height:70%;
+}
+
+.namskara-guru{
+  position:relative;
+  left:50%;
+  opacity: 0; 
+  animation: words 0.4s linear;
+  animation-delay: 1s; 
+}
+
+.namaste{
+  position:relative;
+  right:100%;
+  top:20vh;
+  opacity: 0; 
+  animation: words 0.3s linear;
+  animation-delay: 1.4s; 
+}
+.vanakkam{
+  right:100%;
+  bottom: 30vh;
+  position:relative;
+  opacity: 0; 
+  animation: words 0.3s linear;
+  animation-delay: 1.8s; 
+}
+.namaskaram{
+  left:100%;
+  top:30vh;
+  position:relative;
+  opacity:0; 
+  animation: words 0.3s linear;
+  animation-delay: 2.2s; 
+}
+.helloo{
+  font-size: 2.5rem !important;
+  left:0%;
+  bottom:10vh;
+  position:relative;
+  opacity: 0;
+  animation: words 0.3s forwards;
+  animation-delay: 2.6s; 
+}
+@keyframes words{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    
+    opacity: 1;
+    margin-bottom: 50px;
+  }
+}
+.intro{
+  align-items:center;
+  justify-content: center;
+  display: grid;
+  color:rgba(255, 255, 255, 0.671);
+  border-radius: 30vh;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.521);
+  width:100%;
+  height:100vh;
+  transform: translateY(-100%);
+overflow-x: hidden;
+  animation: introanimation 0.5s linear forwards,outroanimation .41s ease-in forwards;
+}
+.intro{
+  animation-delay:0s,3s;
+}
+
+
+
+@keyframes outroanimation{
+  0%{
+    transform: translateX(0%);
+    border-radius:0%;
+  }
+  100%{
+    transform: translateX(100%);
+    border-radius: 50vh 0 0 50vh;
+  }
+}
+@keyframes introanimation{
+  0%{
+    
+    transform: translateX(-100%);
+  }
+  100%{
+    border-radius:0%;
+    transform: translateX(0%);
+  }
+}
+@keyframes hide{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+body{
+  position: absolute;
+    background-position: center;
+    background-image: url(bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    max-height: 100vh;
+}
+.sidebar{
+    overflow-x: hidden;
+    transform: translateX(100%);
+    overflow-x: hidden;
+}
+.resp-btn{
+  overflow-x: hidden;
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+/* ----------------------------------------------navigation starts------------------------------------------------- */
+.navbar{
+  backdrop-filter: blur;
+    display: flex;
+    width:100%;
+    height:18vh;
+    background-color: rgba(255, 255, 255, 0.315);
+    align-items: flex-end;
+    justify-content: flex-end;
+    opacity: 0;
+    animation: hide 1s linear forwards;
+    animation-delay:3s ;
+}
+
+.btn{  
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:rgba(0, 0, 0, 0.801);   
+
+  font-weight: 600;
+  background: none; 
+  padding: 5px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1rem; 
+    border:none;
+    margin:10px;
+    min-width:7%;
+    box-sizing: border-box;
+}
+
+.btn::after{
+  position: absolute;
+  bottom:0;
+  left:0;
+  content: '';
+  background: rgba(0, 0, 0, 0.452);
+  width:100%;
+  height:6.8%;
+  transform: scaleX(0);
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover::after{
+  transform: scaleX(1);
+}
+/* ----------------------------------------------navigation ends--------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------section starts-------------------------------------------------- */
+.section{
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  width:100%;
+  height: 78vh;
+  background-color: rgb(255, 255, 255)(255, 255, 255);
+  opacity: 0;
+  animation: hide 1s linear forwards;
+  animation-delay:3s ;
+}
+
+.content{
+  backdrop-filter: blur;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius:15px;
+  width:75%;
+  height:97%;
+  background-color: rgba(21, 21, 49, 0.075);
+  display: grid;
+}
+.gridcontent{
+  display:grid;
+  gap:1rem;
+  grid-template-columns: repeat(4,1fr);
+  /* border:1px solid black; */
+  width: 93%;
+  height:90%;
+}
+
+/* -------------------------------------------image(about me)--------------------------------------------------- */
+.one{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-image: url(myimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  width:100%;
+  height:100%;
+  grid-column: span 2;
+  transition: 0.2s ease-in-out;
+}
+
+.about{
+  font-size: 6rem;
+  visibility: hidden;
+}
+.one:hover{
+  width:102%;
+  height:102%;
+}
+
+.one::after{
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(0);
+  transform-origin: 0% 100%;
+  border-radius: 15px;
+  position: absolute;
+  content: 'about me';
+  background: rgba(255, 255, 255, 0.568);
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+ .one:hover::after{
+  border-radius: 15px;
+  transform: scaleY(1);
+ }
+
+
+/* -------------------------------------------education--------------------------------------------------- -------*/
+.two{
+  display: grid;
+  background-image: url(education.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 15px;
+  background-color: rgba(67, 58, 206, 0.404);
+  width:100%;
+  height:100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.two:hover{
+  width:105%;
+  height:105%;
+}
+
+.education{
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
+.two::after{
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(0);
+  transform-origin: 0% 100%;
+  border-radius: 15px;
+  position: absolute;
+  content: 'education';
+  background: rgba(255, 255, 255, 0.568);
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+ .two:hover::after{
+  border-radius: 15px;
+  transform: scaleY(1);
+ }
+
+/* -------------------------------------------hello world--------------------------------------------------- */
+.three{
+  padding-left:10px;
+  border-radius: 15px;
+  background-color: rgba(228, 214, 214, 0.753);
+  width:100%;
+  height:100%;
+  grid-row:span 2;
+}
+.text{
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 10px;
+  padding: 10px;
+}
+.hello{
+  font-size: 1.5rem;
+}
+
+
+
+
+/* ---------------------------------------------Projects--------------------------------------------------- */
+.four{
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: url(project.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.555);
+  width:100%;
+  height:100%;
+  transition: 0.3s ease-in-out;
+}
+.projects{
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+.four:hover{
+  width:105%;
+  height:105%;
+}
+
+
+.four::after{
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(0);
+  transform-origin: 0% 100%;
+  border-radius: 15px;
+  position: absolute;
+  content: 'projects';
+  background: rgba(255, 255, 255, 0.568);
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+ .four:hover::after{
+  border-radius: 15px;
+  transform: scaleY(1);
+ }
+
+
+
+/* -------------------------------------------------Social------------------------------------------------------ */
+.five{ 
+  display: grid;
+  align-items:center;
+  justify-content:right;
+  text-align: right;
+  position: relative;
+  background-image:url(social2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.753);
+  width:100%;
+  height:100%;
+  grid-column: span 2;
+}
+.social{
+  grid-template-columns: 2fr;
+  position: absolute;
+  right:10%;
+  font-size: 1.5rem;
+  width:30%;
+}
+p{
+  text-align: left;
+  line-height: 140%;
+}
+
+
+/* -------------------------------------------Section ends--------------------------------------------------- */
+
+@media(max-width:800px){
+  .namskara-guru{
+    position:relative;
+    left:50%;
+    opacity: 0; 
+    animation: words 0.4s linear;
+    animation-delay: 1s; 
+  }
+  .namaste{
+    position:relative;
+    right:70%;
+    top:20vh;
+    opacity: 0; 
+    animation: words 0.3s linear;
+    animation-delay: 1.4s; 
+  }
+  .vanakkam{
+    right:70%;
+    bottom: 30vh;
+    position:relative;
+    opacity: 0; 
+    animation: words 0.3s linear;
+    animation-delay: 1.8s; 
+  }
+  .namaskaram{
+    left:100%;
+    top:30vh;
+    position:relative;
+    opacity:0; 
+    animation: words 0.3s linear;
+    animation-delay: 2.2s; 
+  }
+  .helloo{
+    font-size: 2.5rem !important;
+    left:20%;
+    bottom:10vh;
+    position:relative;
+    opacity: 0;
+    animation: words 0.3s forwards;
+    animation-delay: 2.6s; 
+  }
+    body {
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .maincontainer{
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+      
+      }
+
+      .navbar {
+        cursor: pointer;
+        position: absolute;
+        backdrop-filter: blur;
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background-color: rgba(255, 255, 255, 0.507);
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+      }
+      
+      .btn {
+        display: none;
+        
+      }
+           
+      .sidebar {
+        
+        backdrop-filter:blur;
+        position: absolute;
+        top: 0;
+        left:70%;
+        min-width: 30%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.63);
+        
+        transform: translateX(100%);
+        cursor: pointer;
+        z-index: 1;
+      }
+      .resp-btn{
+        
+        cursor: pointer;
+        transform: translateX(0%);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 0.9rem; 
+        border:none;
+        margin:10px;
+        min-width:7%;
+        box-sizing: border-box;
+        
+      }
+
+    .side-btn{  
+      color: rgba(0, 0, 0, 0.767);
+      background-color: rgba(255, 255, 255, 0.726);
+      border-radius:8px;
+      cursor: pointer;
+      padding: 5%;
+      display: block;      
+      text-align: center;
+      font-size: 1rem; 
+      border:none;
+      margin-left:8%;
+      margin-bottom:3%;
+      min-width:85%;
+      box-sizing: border-box;
+      transition: 0.5s ease-in-out;
+      
+  }
+
+  .side-btn:hover{
+    
+      box-shadow: inset 200px 0 0 0 rgba(0, 26, 255, 0.322);
+      color: rgba(255, 255, 255, 0.767);
+  }
+
+  .section{
+    
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0)(255, 255, 255);
+    position: relative;
+    top:5rem;
+    width:100%;
+    height: 87.5vh;
+  }
+  
+
+
+
+  nav{
+    
+    margin-top: 50%;
+  }
+/*-------------for section animation------------------*/
+@keyframes slide1 {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+  
+}
+@keyframes slide2 {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+  
+}
+/*---------------------------------------------------*/
+
+
+
+
+
+/*-------------for button animation------------------*/
+@keyframes slideout1 {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-420%);
+  }
+  
+}
+@keyframes slideout2 {
+  0%{
+    transform: translateX(-420%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+  
+}
+/*---------------------------------------------------*/
+
+
+
+/*------------------------for javascript---------------------------*/
+.animateout1{
+  animation: slideout1 0.3s linear forwards;
+}
+.animate1{
+  animation: slide1 0.3s linear forwards;
+}
+
+.animateout2{
+  animation: slideout2 0.3s linear forwards;
+}
+.animate2{
+  animation: slide2 0.3s linear forwards;
+}
+
+.stayin{
+  transform: translateX(-420%);
+}
+.stayout{
+  transform: translateX(0%);
+}
+
+.stayoutsidebar{
+  transform: translateX(100%);
+}
+.stayinsidebar{
+  transform: translateX(0%);
+}
+/*-----------------------------------------------------------------*/
+
+.section{
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  width:100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255)(255, 255, 255);
+}
+.content{
+  backdrop-filter: blur;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius:15px;
+  width:75%;
+  height:100%;
+  background-color: rgba(21, 21, 49, 0.075);
+  display: grid;
+}
+.gridcontent{
+  display:grid;
+  gap:1rem;
+  grid-template-columns: repeat(1,1fr);
+  /* border:1px solid black; */
+  width: 93%;
+  height:100%;
+}
+
+
+.one{
+  margin-top: 10px;
+  grid-column: span 4;
+}
+.two{
+  /* margin-top: 10px; */ 
+  grid-row-start:4; 
+  grid-column: span 4;
+}
+
+.three{
+  grid-row-start: 3;
+  grid-column: span 4;
+}
+.four{
+  grid-column: span 4;
+}
+.five{
+  grid-column: span 4;
+}
+.social{
+  position: relative;
+  right:10%;
+  font-size: 1.5rem;
+  width:30%;
+}
+.three{
+  background-color: rgba(228, 214, 214, 0.753);
+  width:97%;
+  height:100%;
+  grid-row:span 2;
+}
+.text{
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+}
+
+@media(max-width:1226px) and (min-width:1000px){
+  body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .maincontainer{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  
+  }
+  .content{
+    margin-top: 50px;
+  }
+}
+
+@media(max-width:1000px) and (min-width:800px){
+    body {
+      padding: 0%;
+      margin: 0%;
+      width: 100%;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+  
+    .maincontainer{
+      overflow-x: hidden;
+      position: relative;
+      width: 100%;
+    
+    }
+  .content{
+    margin-top: 60px;
+  }
+
+  .one{
+    grid-column: span 2;
+  }
+  .two{
+    grid-column: span 2;
+  }
+  
+  .three{
+    grid-column: span 4;
+  }
+  .four{
+    grid-column: span 2;
+  }
+  .five{
+    grid-column: span 2;
+  }
+  .social{
+    position: relative;
+    right:10%;
+    font-size: 1.5rem;
+    width:30%;
+  }
+
+
+}
+
+@media (max-width:800px) and (min-width:500px){
+  .maincontainer{
+    height:100vh;
+  }
+  body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .content{
+    margin-top: 60px;
+  }
+  .maincontainer{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  
+  }
+  .one{
+    background-position: 0% 30%;
+  }
+}
+@media (max-width:398px){
+
+  .namaste{
+    position:relative;
+    right:50%;
+    top:20vh;
+    opacity: 0; 
+    animation: words 0.3s linear;
+    animation-delay: 1.4s; 
+  }
+  .vanakkam{
+    right:50%;
+    bottom: 30vh;
+    position:relative;
+    opacity: 0; 
+    animation: words 0.3s linear;
+    animation-delay: 1.8s; 
+  }
+  .namaskaram{
+    left:50%;
+    top:30vh;
+    position:relative;
+    opacity:0; 
+    animation: words 0.3s linear;
+    animation-delay: 2.2s; 
+  }
+
+
+  body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .maincontainer{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  
+  }
+  .five{
+    background-position: 30% 0%;
+  }
+  .social{
+    font-weight: bold;
+    grid-template-columns: 2fr;
+    position: relative;
+    right:10%;
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:470px) {
+  .maincontainer{
+    height:100vh;
+  }
+  body {
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  .content{
+    margin-top: 60px;
+  }
+  .maincontainer{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  
+  }
+  .five{
+    background-position: 30% 0%;
+  }
+  .social{
+    font-weight: bold;
+    grid-template-columns: 2fr;
+    position: relative;
+    right:10%;
+    font-size: 1rem;
+  }
+}
+@media (min-width:471px) and (max-width:499px) {
+  .maincontainer{
+    height:100vh;
+  }
+  .content{
+    margin-top: 60px;
+  }
+}
