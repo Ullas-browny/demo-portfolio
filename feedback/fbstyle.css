@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    display: grid;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-position: center;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;   
+}
+.container{
+    overflow-y: hidden;
+    gap: 1.5rem;
+    display: grid;
+    text-align: center;
+    border-radius: 20px;
+    place-self: center;
+    height:80vh;
+    width:80%;
+}
+h1{
+    color:white;
+    padding-top: 20px;
+}
+
+.innercontainer2{
+    justify-items: center;
+    height: 110%;
+    display: grid;
+    border-radius: 20px;
+    background-color: rgba(83, 128, 163, 0.258);
+    backdrop-filter: blur(70px);
+}
+.feedbackcontainer{
+   
+    border-radius: 20px;
+    width:80%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    
+}
+.tit{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+.bubble{
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: fixed;
+    border-left:2px solid red;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    place-self: center;
+    background-color: rgba(255, 255, 255, 0.66);
+    width:95%; 
+}
+
+form{
+    width:80%;
+    position: relative;
+    bottom:30%;
+}
+
+input[type="text"]{
+    position: relative;
+    top:30%;
+    width:75%;
+    padding:2% 0 2% 0;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+input[type="submit"]{
+    position: relative;
+    top:30%;
+    padding: 2%;
+    margin-right:12px;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+}
+img{
+    max-width: 8%;
+}
+p{
+    position: relative;
+    left:-47%;
+}
+.name{
+    font-size: min(1rem,12px);
+    position: absolute;
+    left:53%;
+    bottom:50%;
+}

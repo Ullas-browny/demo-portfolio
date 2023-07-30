@@ -50,7 +50,12 @@ button.addEventListener('click',something)
 
         
 }
-
+function about(){
+    window.location.href="./about/about.html"
+}
+function education(){
+    window.location.href="./education/index.html"
+}
 
 
 
