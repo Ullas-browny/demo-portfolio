@@ -46,3 +46,17 @@ minicard3.addEventListener("mouseover",()=>{
     card.classList.add("animation")
 })
 //------------------------------------------------------------------------
+
+window.addEventListener("load", (event) => {
+    let lineanimation = document.querySelector("#line")
+    lineanimation.classList.add("lineanimation")
+
+    let box1animation = document.querySelector("#box1")
+    box1animation.classList.add("box1animation")
+
+    let box2animation = document.querySelector("#box2")
+    box2animation.classList.add("box2animation")
+
+    let box3animation = document.querySelector("#box3")
+    box3animation.classList.add("box3animation")
+});
