@@ -23,7 +23,8 @@ body{
     background-color: rgba(206, 192, 192, 0.283);
     backdrop-filter: blur(2px);
     display: grid;
-    grid-template-columns: (4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     gap:1rem;
     overflow-y: scroll;
     place-self: center;
@@ -39,19 +40,20 @@ body{
     border-radius: 15px;
   }
 .one{
-    grid-column: span 2;
-    grid-template-columns: (2,1fr);
+    grid-column: span 4;
+    grid-template-columns: repeat(2,1fr);
     gap:1rem;
     display: flex;
 }
 .anime{
+    grid-row-start:5;
     backdrop-filter: blur(1px);
     background-color: rgba(240, 248, 255, 0.059);
     padding: 20px;
     font-weight: bold;
     font-size: 1.5rem;
     align-self: center;
-    grid-column: span 2;
+    grid-column: span 4 ;
 }
 .dev{
     background-image:url(dev.jpg) ;
@@ -70,12 +72,18 @@ body{
     background-color: rgba(197, 197, 211, 0.797); 
 }
 
-.two{
+/* .two{
+    height: 0%;
     opacity: 0;
     gap:1rem;
-}
+} */
 
 .three{
+    position: relative;
+    width:100%;
+    grid-row-start: 2;
+    left:95%;
+    grid-column: span 2;
     margin-top: 8%;
     display: flex;
     gap:1rem;
@@ -98,6 +106,8 @@ body{
 }
 
 .four{
+    grid-row-start: 3;
+    grid-column: span 2;
     display: flex;
     gap:1rem;
 }
@@ -118,9 +128,10 @@ body{
     background-color: rgba(197, 197, 211, 0.769); 
 }
 
+
 @media(max-width:700px){
     .one{
-        grid-column: span 2;
+        grid-column: span 4;
     }
     .dev{
         width:100%;
@@ -133,7 +144,11 @@ body{
         background-color: rgba(197, 197, 211, 0.769); 
     }
     .three{
-        display:none;
+        position: relative;
+        left:0;
+        width:93%;
+        grid-column: span 4;
+        /* display:none; */
     }
 
     .two{
@@ -142,11 +157,11 @@ body{
         opacity: 1;
         gap:1rem;
     }
-    .three{
+    /* .three{
        display: none;
-    }
+    } */
     .four{
-        grid-column: span 2;
+        grid-column: span 4;
     }
 }
 
@@ -154,16 +169,17 @@ body{
     .innercontainer{
         background-color: rgba(206, 192, 192, 0.283);
         backdrop-filter: blur(2px);
-        grid-template-columns: (1,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap:1rem;
         overflow-y: scroll;
+        overflow-x: hidden;
         place-self: center;
         width:90%;
         height:90%;
     } 
 
     .one{
-        width:76%;
+        width:160%;
         display: grid;
         grid-column: span 4;
         gap:1rem;
@@ -173,17 +189,18 @@ body{
         padding-bottom: 30% !important;
     }
     .devexp{
+        grid-row-start: 2;
         margin-top: 6rem;
         width:100%;
         height:50%;
         background-color: rgba(197, 197, 211, 0.769); 
     }
-    .two{
-        width:76%;
+    /* .two{
+        width:96%;
         display: none;
         grid-column: span 4;
         gap:1rem;
-    }
+    } */
     .fb{
         padding-bottom: 30% !important;
         background-position: center;
@@ -191,29 +208,33 @@ body{
         background-size:cover ;
         background-repeat: no-repeat;
         border-radius: 15px;
-        width:85%;
+        width:80%;
         height:100%;
         background-color: rgba(197, 197, 211, 0.356);
     }
     .fbexp{
-        margin-top: 7rem;
+        grid-row-start: 5;
+        width:80%;
+        height: 70%;
+        margin-top: 4.5rem;
         border-radius: 15px;
-        width:85%;
-        height:50%;
         background-color: rgba(197, 197, 211, 0.769); 
     }
 
     .three{
+        width:97%;
         display: grid;
         grid-column: span 4;
         gap:1rem;
     }
     .four{
+        width: 91%;
         display: grid;
         grid-column: span 4;
         gap:1rem;
     }
     .paint{
+        margin-top: 8%;
         padding-bottom: 30% !important;
         background-position: center;
         background-image:url(paint.jpg) ;
@@ -221,11 +242,11 @@ body{
         background-repeat: no-repeat;
         border-radius: 15px;
         width:85%;
-        height:100%;
+        height:80%;
         background-color: rgba(197, 197, 211, 0.356);
     }
     .paintexp{
-        margin-top: 7rem;
+        margin-top: 35%;
         border-radius: 15px;
         width:85%;
         height:50%;
