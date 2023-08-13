@@ -234,7 +234,7 @@ body{
         gap:1rem;
     }
     .paint{
-        margin-top: 8%;
+        /* margin-top: 8%; */
         padding-bottom: 30% !important;
         background-position: center;
         background-image:url(paint.jpg) ;
@@ -246,7 +246,7 @@ body{
         background-color: rgba(197, 197, 211, 0.356);
     }
     .paintexp{
-        margin-top: 35%;
+        margin-top: 5.5rem;
         border-radius: 15px;
         width:85%;
         height:50%;
