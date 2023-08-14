@@ -132,7 +132,7 @@ overflow-x: hidden;
 body{
     position: absolute;
     background-position: center;
-    background-image: url(bg1.png);
+    background-image: url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691911669/portfolio-images/vuq6ymjekzv9gi2eq3gh.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -247,7 +247,7 @@ body{
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  background-image: url(myimage.jpg);
+  background-image: url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691911657/portfolio-images/wvpppwwl8ikwn6vbl9fk.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -297,7 +297,7 @@ body{
 /* -------------------------------------------education--------------------------------------------------- -------*/
 .two{
   display: grid;
-  background-image: url(education.png);
+  background-image: url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691911657/portfolio-images/ieart69xtnrtbgzw1kck.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -375,7 +375,7 @@ body{
   display: grid;
   align-items: center;
   justify-content: center;
-  background-image: url(project.png);
+  background-image: url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691911664/portfolio-images/bmrwmjudhm8onfzliudz.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -430,7 +430,7 @@ body{
   justify-content:right;
   text-align: right;
   position: relative;
-  background-image:url(social2.jpg);
+  background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691911669/portfolio-images/o86lhljx5ctmvgrgk6ze.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

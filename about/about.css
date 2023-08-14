@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image:url(bg1.jpg);
+    background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/f_auto,q_auto/v1/aboutPage/wfixgmsbpgqasklo09hs);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -56,7 +56,7 @@ body{
     grid-column: span 4 ;
 }
 .dev{
-    background-image:url(dev.jpg) ;
+    background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691912672/aboutPage/nc0ajklcea9ltmmylfdp.jpg) ;
     background-position: center;
     background-size:cover ;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body{
 }
 .fb{
     background-position: center;
-    background-image:url(fb.jpg) ;
+    background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691912673/aboutPage/k10t22vwpff7qthwcs7c.jpg) ;
     background-size:cover ;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -113,7 +113,7 @@ body{
 }
 .paint{
     background-position: center;
-    background-image:url(paint.jpg) ;
+    background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691912672/aboutPage/w8jzcpzdn66wphzvex3a.jpg) ;
     background-size:cover ;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -204,7 +204,7 @@ body{
     .fb{
         padding-bottom: 30% !important;
         background-position: center;
-        background-image:url(fb.jpg) ;
+        background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691912673/aboutPage/k10t22vwpff7qthwcs7c.jpg) ;
         background-size:cover ;
         background-repeat: no-repeat;
         border-radius: 15px;
@@ -237,7 +237,7 @@ body{
         /* margin-top: 8%; */
         padding-bottom: 30% !important;
         background-position: center;
-        background-image:url(paint.jpg) ;
+        background-image:url(https://res.cloudinary.com/dokqlis9w/image/upload/v1691912672/aboutPage/w8jzcpzdn66wphzvex3a.jpg) ;
         background-size:cover ;
         background-repeat: no-repeat;
         border-radius: 15px;
