@@ -36,6 +36,7 @@ body{
 }
 .lineanimation{
     animation: lineanimation 0.7s linear forwards;
+    animation-delay: 1s;
 }
 .grad{
     border-radius: 0 30px 0 30px;
@@ -80,7 +81,7 @@ body{
 }
 .box1animation{
     animation: minicard 0.3s linear forwards;
-    animation-delay: 0.7s;
+    animation-delay: 1.7s;
 }
 
 .box2{
@@ -99,7 +100,7 @@ body{
 }
 .box2animation{
     animation: minicard 0.3s linear forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 .box3{
     border-radius:20px;
@@ -117,7 +118,7 @@ body{
 }
 .box3animation{
     animation: minicard 0.3s linear forwards;
-    animation-delay: 1.3s;
+    animation-delay: 2.3s;
 }
 .animation{
     animation: minicard 0.3s linear forwards;
