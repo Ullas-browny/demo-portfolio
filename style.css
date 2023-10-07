@@ -451,7 +451,22 @@ p{
   text-align: left;
   line-height: 140%;
 }
-
+.social p span{
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+}
+#ig:hover{
+  font-size: 2rem;
+}
+#git:hover{
+  font-size: 2rem;
+}
+#li:hover{
+  font-size: 2rem;
+}
+#em:hover{
+  font-size: 2rem;
+}
 
 /* -------------------------------------------Section ends--------------------------------------------------- */
 

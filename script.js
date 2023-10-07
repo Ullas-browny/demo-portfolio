@@ -57,8 +57,25 @@ function education(){
     window.location.href="./education/index.html"
 }
 
+function ig(){
+    window.location.href = "https://www.instagram.com/_._zooie_._/"
+}
+function git(){
+    window.location.href = "https://github.com/Ullas-browny"
+}
+function li(){
+    window.location.href = "https://www.linkedin.com/in/ullas-a-6b8219253/"
+}
+function em(){
+    window.location.href = "mailto:ullasrrce@gmail.com?"
+}
 
 
+function resume(){
+    window.location.href = "https://drive.google.com/u/0/uc?id=1plv907uN_CC4kPYqPG2iSB6bEayNhgF5&export=download"
+}
 
-
+function feedback(){
+    window.location.href = "./feedback/fb.html"
+}
 
