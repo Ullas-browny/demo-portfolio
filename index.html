@@ -19,7 +19,7 @@
         <div class="navbar">
             <button class="btn"></button>
             <button class="btn"></button>
-            <button class="btn">Resume</button>
+            <button class="btn" onclick="resume()">Resume</button>
             <button class="btn"><a href="./feedback/fb.html">Feedback</a></button>
             <button class="resp-btn" id="anim">☰</button>
         </div>
@@ -28,8 +28,8 @@
             <nav>
             <!-- <button class="side-btn"></button>
             <button class="side-btn"></button> -->
-            <button class="side-btn">Resume</button>
-            <button class="side-btn">Feedback</button>    
+            <button class="side-btn" onclick="resume()">Resume</button>
+            <button class="side-btn" onclick="feedback()">Feedback</button>    
             </nav>
         </div>
 
@@ -49,10 +49,12 @@
                                         </div></div>
                     <div class="four"><div class="projects"><span><br>projects<br><br></span></div></div>
                     <div class="five"><div class="social"><span>
-                            <p>Instagram <br>
-                            Github <br>
-                            Linkedin <br>
-                            Email</p>
+                        <p>
+                            <span id="ig" onclick="ig()">Instagram</span> <br>
+                            <span id="git" onclick="git()">Github</span> <br>
+                            <span id="li" onclick="li()">Linkedin</span> <br>
+                            <span id="em" onclick="em()">Email</span>
+                        </p>
                         </span></div></div>
                                         
                     </div>
